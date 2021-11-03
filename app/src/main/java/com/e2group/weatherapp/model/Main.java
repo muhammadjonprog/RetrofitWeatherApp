@@ -2,11 +2,12 @@ package com.e2group.weatherapp.model;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Main {
+import java.io.Serializable;
 
+public class Main implements Serializable {
 
     @SerializedName("temp")
-    String temp;
+    Double temp;
 
     @SerializedName("humidity")
     String humidity;
@@ -15,11 +16,23 @@ public class Main {
     String feels_like;
 
 
-    public String getTemp() {
+    public String getPressure() {
+        return pressure;
+    }
+
+    public void setPressure(String pressure) {
+        this.pressure = pressure;
+    }
+
+    @SerializedName("pressure")
+    String pressure;
+
+
+    public Double getTemp() {
         return temp;
     }
 
-    public void setTemp(String temp) {
+    public void setTemp(Double temp) {
         this.temp = temp;
     }
 

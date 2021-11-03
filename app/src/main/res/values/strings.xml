@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">WeatherApp</string>
+
+
+    <string-array name="arrCity">
+        <item>Худжанд</item>
+        <item>Душанбе</item>
+        <item>Куляб</item>
+        <item>Спитамен</item>
+        <item>Истаравшан</item>
+        <item>Исфара</item>
+        <item>Пенджикент</item>
+    </string-array>
+
 </resources>
